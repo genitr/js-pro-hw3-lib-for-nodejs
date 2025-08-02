@@ -2,7 +2,11 @@
   "name": "@genitr/js-pro-hw3-lib-for-nodejs",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,13 @@
     "url": "https://github.com/genitr/js-pro-hw3-lib-for-nodejs/issues"
   },
   "homepage": "https://github.com/genitr/js-pro-hw3-lib-for-nodejs#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1"
+  }
 }
